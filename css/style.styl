@@ -1,0 +1,564 @@
+@font-face 
+  font-family: 'BIGJOHN'; /*a name to be used later*/
+  src: url('../fonts/BigJohn.otf'); /*My own*/
+  src: url("../fonts/BigJohn.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/BigJohn.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("../fonts/BigJohn.woff") format("woff"), /* Modern Browsers */
+         url("../fonts/BigJohn.ttf")  format("truetype"), /* Safari, Android, iOS */
+         url("../fonts/BigJohn.svg#svgBigJohn") format("svg"); /* Legacy iOS */
+
+body 
+  background-color: white
+  color: black
+  font-family: "BIGJOHN"
+  line-height: 2em
+  margin: 0
+  text-align: center
+
+.navBar 
+  background-color: white 
+  position: fixed
+  min-width: 100%
+  z-index: 5;
+
+.shadow
+  -webkit-box-shadow: 0 8px 6px -6px #999
+  -moz-box-shadow: 0 8px 6px -6px #999
+  box-shadow: 0 8px 6px -6px #999
+
+.logo 
+  margin-bottom:16px
+  margin-top: 16px
+
+.logo a
+  color: black
+  text-decoration: none
+
+.wrapper 
+  margin: 0 auto
+  max-width: 1225px
+  padding: 0 2%
+
+nav ul 
+  display: flex
+  justify-content: space-between
+  list-style-type: none
+  width: 50%
+
+nav ul a 
+  color: black
+  text-decoration: none
+  transition: all .5s ease
+  cursor: pointer
+
+nav ul a:hover 
+  color: #696969
+  border-bottom: 2px solid deeppink
+  transition: all 150ms ease; 
+
+nav li 
+  display: inline-block
+
+nav #menu-toggle 
+  display: none
+
+nav .label-toggle 
+  display: none
+
+nav .wrapper 
+  align-items: center
+  display: flex
+  justify-content: space-between
+
+header 
+  text-align: center
+  color: white
+  height: 90vh
+  background: linear-gradient(to right, #00DAF0 50%, #f9f4ed 50%)
+  display: flex
+  justify-content: center
+  align-items: center
+
+h1 
+  display: block
+  color: black
+  font-size: 3.30em
+
+h1.center
+  margin-bottom: 0
+  text-align: center
+
+h2,h3,h4.center 
+  text-align: center
+
+h2 
+  display: block
+  color: black
+  font-size: 2.50em
+
+h3 
+  display: block
+  color: black
+  font-size: 2.00em
+
+.padding
+  margin: 0
+  padding-top: 40px
+
+h4 
+  display: block
+  color: black
+  margin: 0
+
+.bigger 
+  font-size: 20px
+
+h5
+  font-family: "BIGJOHN"
+  color: black
+  font-size: 1.50em
+  float: right
+  margin-top: 8px
+  margin-right: 5px
+  margin-bottom: 0
+
+p 
+  display: block
+  font-family: 'Roboto', sans-serif;
+  color: black
+  font-size: 18px
+  font-weight: 400
+  text-align: left
+  margin: 25px
+
+.flex-container 
+  padding: 0
+  margin: 0
+  list-style: none
+  display: flex
+  flex-wrap: wrap
+  -webkit-flex-flow: row wrap
+  justify-content: center
+
+.flex-item 
+  width: 400px
+  height: 250px
+  margin-top: 10px
+  margin: 20px
+  position: relative
+
+.flex-container-vaardigheden
+  padding: 0
+  margin: 25px 0
+  list-style: none
+  display: flex
+  flex-wrap: wrap
+  -webkit-flex-flow: row wrap
+  justify-content: center
+
+.flex-bar 
+  display: inline-block
+  padding: 15px
+  margin: 15px
+
+.progress
+  background-color: white
+  height: 40px
+  width: 290px
+  padding: 15px
+
+.grijs_balk
+  height: 100%
+  width: 100%
+  background-color: lightgray
+
+.groen_balk_sketch
+  height: 100%
+  width: 75%
+  background-color: #59EC1E
+
+.groen_balk_illustrator
+  height: 100%
+  width: 75%
+  background-color: #59EC1E
+
+.groen_balk_photoshop
+  height: 100%
+  width: 70%
+  background-color: #59EC1E
+
+.groen_balk_html
+  height: 100%
+  width: 65%
+  background-color: #59EC1E
+
+.groen_balk_css
+  height: 100%
+  width: 60%
+  background-color: #59EC1E
+
+.groen_balk_javascript
+  height: 100%
+  width: 50%
+  background-color: #59EC1E
+
+.flex-container_over_mij 
+  padding: 0
+  margin-top: 0px
+  margin-bottom: 30px
+  list-style: none
+  display: flex
+  flex-wrap: wrap
+  -webkit-flex-flow: row wrap
+  justify-content: center
+
+.flex-item_mij 
+  width: 400px
+  height: 355px
+  line-height: 20px
+  color: black
+  background-color: #f9f4ed
+
+.item_mij_foto 
+  width: 400px
+  height: 355px
+ 
+img
+  display: block
+  width: 100%
+  height: 100%
+  object-fit: cover
+  object-position: center center
+
+
+// Copy and paste work
+.overlay 
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: deeppink
+  overflow: hidden
+  width: 100%
+  height: 0
+  transition: .5s ease
+
+
+.flex-item:hover .overlay 
+  height: 30%
+
+
+.text 
+  white-space: nowrap
+  color: white
+  font-size: 20px
+  position: absolute
+  overflow: hidden
+  top: 55%
+  left: 50%
+  transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+
+
+.link_project 
+  display: hidden
+// Copy and paste work ends here
+
+.btn 
+	font-family: inherit
+	font-size: inherit
+	background: none
+	cursor: pointer
+	padding: 20px 40px
+	letter-spacing: 1px
+	font-weight: 700
+	position: relative
+	-webkit-transition: all 0.3s
+	-moz-transition: all 0.3s
+	transition: all 0.3s
+  
+.btn:after 
+	content: ''
+	position: absolute
+	z-index: -1
+	-webkit-transition: all 0.3s
+	-moz-transition: all 0.3s
+	transition: all 0.3s
+
+.btn-1 {
+	border: 5px solid black
+  margin-bottom: 25px
+}
+
+.btn-1e {
+	overflow: hidden
+}
+
+.btn-1e:after {
+	width: 100%
+	height: 0
+	top: 50%
+	left: 50%
+	background: black
+	opacity: 0
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg)
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg)
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg)
+	transform: translateX(-50%) translateY(-50%) rotate(45deg)
+}
+
+.btn-1e:hover,
+.btn-1e:active {
+	color: white
+}
+
+.btn-1e:hover:after {
+	height: 260%
+	opacity: 1
+}
+
+.btn-1e:active:after {
+	height: 400%
+	opacity: 1
+}
+
+#vaardigheden 
+  background-color: #D8D8D8
+  width: 100%
+  height: 100%
+
+#contact 
+  background-color: #D8D8D8
+  width: 100%
+  height: 100%
+
+#content 
+  background-color: #D8D8D8
+  width: 100%
+  height: 100%
+
+@media screen and (max-width: 768px) {
+  nav nav ul a {
+    color: black
+  }
+  nav ul {
+    background-color: white
+    display: block
+    height: 0
+    list-style-type: none
+    opacity: 0
+    text-align: center
+    transition: all 1s ease
+    width: 100%
+    visibility: hidden
+  }
+  nav li {
+    border-bottom: 2px solid black
+    color: black
+    display: block
+    font-size: 1.5em
+    padding: 2em 0
+  }
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1
+    height: 100vh
+    visibility: visible
+  }
+  nav .label-toggle {
+    background: linear-gradient(to bottom, black 0%, black 20%, transparent 20%, transparent 40%, black 40%, black 60%, transparent 60%, transparent 80%, black 80%, black 100%);
+    cursor: pointer
+    display: block
+    float: right
+    height: 35px
+    width: 35px
+  }
+  nav .wrapper {
+    display: block
+  }
+
+header {
+  height: 60vh
+}
+
+.flex-item_mij {
+  width: 100%
+  height: 100%
+  }
+
+.item_mij_foto {
+  width: 100%
+}
+.flex-bar{
+  padding: 0px
+}
+
+.flex-mock{
+  display: inline-block
+  padding: 15px
+  margin: 15px
+  width: 100%
+}
+
+}
+
+// Titeltje toch
+// p {
+//   display: inline-block;
+//   padding: 1.5em 0em;
+//   position: absolute;
+//   left: 50%;
+//   width: 40em;
+//   margin: 0 0 0 -20em;
+// }
+// p span {
+//   font: 700 3.5em/1 "BIGJOHN"
+//   letter-spacing: 0;
+//   padding: .25em 0 .325em;
+//   display: block;
+//   margin: 0 auto;
+//   /* Clip Background Image */
+//   background: url("../img/animated_text_fill.png") repeat-y;
+//   -webkit-background-clip: text;
+//   background-clip: text;
+//   /* Animate Background Image */
+//   -webkit-text-fill-color: transparent;
+//   -webkit-animation: aitf 80s linear infinite;
+//   /* Activate hardware acceleration for smoother animations */
+//   -webkit-transform: translate3d(0, 0, 0);
+//   -webkit-backface-visibility: hidden;
+//   z-index: 3;
+// }
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+// Header animation (Hacky Code)
+.block_name 
+  position: relative
+  overflow: hidden
+
+  .h1_animation
+    font-size: 7vw
+    line-height: 1
+    margin: 0
+    padding: 1.25rem 2rem
+    border-right: 1px solid #f9f4ed
+    color: black
+    text-transform: uppercase
+    animation: fadeIn 0s 0.6s
+    animation-fill-mode: backwards
+
+  .h1_animation_2
+    font-size: 7vw
+    line-height: 1
+    margin: 0
+    padding: 1.25rem 2rem
+    border-right: 1px solid #00DAF0
+    color: black
+    text-transform: uppercase
+    animation: fadeIn 0s 0.6s
+    animation-fill-mode: backwards
+  
+  &::after 
+    position: absolute
+    content: ''
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: deeppink
+    border-right: 1px solid #00DAF0
+    transform: translateX(-100%)
+    animation: secondaryImageOverlayIn 0.6s 0s, secondaryImageOverlayOut 0.6s 0.6s
+    animation-fill-mode: both
+
+@keyframes fadeIn 
+  0% 
+    opacity: 0
+  
+  100% 
+    opacity: 1
+
+@keyframes secondaryImageOverlayIn 
+  0% 
+    width: 0
+  
+  100% 
+    width: 100%
+
+@keyframes secondaryImageOverlayOut 
+  0% 
+    transform: translateX(0)
+  
+  100% 
+    transform: translateX(100%)
+  
+// Eind Hacky Code 
+
+
+// Project Skeleton
+.mock_up_background
+  text-align: center
+  color: white
+  height: 40vh
+  padding-top: 70px
+  background: #00DAF0
+  display: flex
+  justify-content: center
+  align-items: center
+
+.info_project
+  list-style: none
+  display: flex
+  justify-content: center
+  flex-flow: row wrap;
+  padding: 35px
+  padding-top: 0px
+
+.info_project_item
+  padding: 15px
+  margin: 15px
+  flex-grow: 1;
+  width: 25%;
+
+.project_info
+  text-align: center
+  margin: 0
+
+.project_info_lang
+  text-align: left
+  margin: 0
+
+.project_documentatie
+  text-decoration: underline
+  text-align: left
+  
+.mock-up
+  width: 100%
+  height: 70vh
+
+.flex-container-mock
+  padding: 0
+  margin: 5px 0
+  list-style: none
+  display: flex
+  flex-wrap: wrap
+  -webkit-flex-flow: row wrap
+  justify-content: center
+
+.flex-mock 
+  display: inline-block
+  padding: 15px
+  margin: 15px
+  width: 25%
+
+.underline 
+  text-decoration: none
+  color: black
