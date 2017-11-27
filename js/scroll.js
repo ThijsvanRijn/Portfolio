@@ -27,3 +27,9 @@ werkLink.addEventListener('click', function(){ smoothScroll(werkLinkTo) });
 vaardighedenLink.addEventListener('click', function(){ smoothScroll(vaardighedenLinkTo) });
 overmijLink.addEventListener('click', function(){ smoothScroll(overmijLinkTo) });
 contactLink.addEventListener('click', function(){ smoothScroll(contactLinkTo) });
+
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('service-worker.js').then(function () {}, function () {});
+// } else {
+//   console.error('Ur browser does not support ServiceWorkers :( performance might be hurt');
+// };
